@@ -1,0 +1,474 @@
+@import "preloader.css";
+body{
+    background-image: url('../images/pinkdust.png');
+    font-family: roboto-regular;
+}
+.module{
+    background-color: rgba(255, 255, 255,0.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:20px;
+    border-radius: 5px;
+}
+
+section.main{
+    min-height: 440px;
+    padding: 10px;
+    position: relative;
+}
+footer{
+    height: 80px;
+    background-color: rgb(110, 4, 102);
+}
+.nav-icon-wrapper{
+    float: right;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.nav-icon-wrapper div{
+    height: 1px;
+    width:20px;
+    background-color: rgb(46, 92, 153);
+    margin-top:5px;
+    transition: 0.5s;
+}
+.change .bar2 {
+    -webkit-transform:translate(-15px, 0px) ;
+    transform: translate(-15px, 0px) ;
+}
+.site-title{
+    display:inline-block;
+}
+.main-search{
+    display:inline-block;
+    margin-left: 80px;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.main-search input{
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid rgb(110, 4, 102);
+    padding: 4px 10px;
+    color: rgb(110, 4, 102)
+}
+.site-logo img{
+    width: 150px;
+}
+nav .nav-links{
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    display: none;
+    height: 100%;
+    background-color: rgb(46, 92, 153);;
+    padding: 10px;
+    text-align: left;
+    z-index: 10;
+}
+nav .nav-links a{
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+nav .nav-links a:hover{
+    opacity:0.7;
+}
+nav .nav-links hr{
+    border: 1px solid rgba(126, 126, 126, 0.3)
+}
+#home{
+    background-image: linear-gradient( rgba(3, 44, 17, 0.4), rgba(0, 0, 0, 0.4)), url('../images/background-home2.jpg');
+    background-size:cover;
+	background-repeat:no-repeat;
+    background-position: center, center;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+}
+#home .head{
+    font-size: 2.2em;
+    font-family:  "librebaskerville-bold";
+}
+#home .buttons {
+    margin-top: 30px;
+}
+#home .buttons button {
+    border: 2px solid rgb(46, 92, 153);
+    border-radius: 3px;
+    padding: 10px 30px;
+    background-color: rgb(46, 92, 153);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+footer {
+    padding: 30px 30px;
+    color: white;
+}
+
+/*Explore*/
+#explore{
+    background-color: white;
+}
+.explore-head{
+    margin: 10px 5px 40px 5px;
+    font-family:  "montserrat-light";
+}
+.post{
+    padding-top:20px;
+}
+.post .profile-image img{
+    width: 50%;
+    border-radius: 50%;
+}
+.post .posted{
+    font-size: 0.8rem;
+}
+.post .title h5{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.post .user-name h6{
+    margin-top: 10px;
+    color: rgb(110, 4, 102);
+}
+.post button{
+    border: 1px solid rgb(46, 92, 153);
+    padding: 5px 25px;
+    background-color: rgb(46, 92, 153);
+    color: white;
+    cursor: pointer;
+}
+.post .pay, .post .bid{
+    display:inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.post .pay .label, .post .bid .label{
+    margin-right: 10px;
+    color: rgb(46, 92, 153);
+}
+.post hr{
+    margin-bottom: 20px;
+}
+.explore-cat{
+    position:absolute;
+    top:20px;
+    right:20px;
+    border: 1px solid #ccc;
+    width: 40%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fafafa;
+    text-align: center;
+}
+.explore-cat select{
+    width:130%;
+    padding: 5px 8px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+}
+.explore-cat select:focus{
+    outline: none;
+}
+#place_bid{
+    background-color: rgb(9, 21, 37);
+    color: white;
+    padding-top:40px;
+}
+
+#place_bid .title{
+    font-size: 1.6em;
+    font-family: "montserrat-light"
+}
+#place_bid .description{
+    margin-top: 20px;
+    border-left: 2px solid white;
+    padding-left: 20px;
+    text-align: justify;
+}
+#place_bid textarea{
+    height: 200px;
+    margin-top: 30px;
+}
+#place_bid .textarea{
+    margin-top: 60px;
+}
+#place_bid .bid-button{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#place_bid .profile-image img{
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#place_bid .user-name h6{
+    margin-top: 10px;
+    color: rgb(230, 218, 62);
+}
+#place_bid .fas, #place_bid .far{
+    margin-left: 30px;
+    color: rgb(230, 218, 62);
+}
+
+#post{
+    background-color: white;
+    padding: 30px;
+}
+#post .budget{
+    margin-top: 40px;
+}
+#post .budget em{
+    font-size: 0.8em;
+}
+#post .description{
+    margin-top: 40px;
+}
+#post .submit-btn{
+    margin-top: 40px;
+    text-align: center;
+}
+#post .form-control{
+    box-shadow:none;
+    border-radius: unset;
+}
+.post-cat{
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fafafa;
+    text-align: center;
+}
+.post-cat select{
+    width:130%;
+    padding: 5px 8px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+}
+.post-cat select:focus{
+    outline: none;
+}
+#register, #login{
+    padding: 30px 0px;
+    background-image: linear-gradient( rgba(3, 44, 17, 0.4), rgba(47, 184, 19, 0.4)), url('../images/background-home2.jpg');
+    background-size:cover;
+	background-repeat:no-repeat;
+    background-position: center, center;
+}
+.register-form,.login-form{
+    width: 400px;
+    min-height: 400px;
+    background-color: white;
+    margin: auto auto;
+    border-radius:5px;
+    padding: 20px;
+    font-size: 0.8em;
+}
+.register-form h5, .login-form h5{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.register-form .form-control, .login-form .form-control{
+    box-shadow:none;
+    border-radius: unset;
+    font-size: 0.9em;
+}
+.register-form .submit-btn button, .login-form .submit-btn button{
+    border: 1px solid rgba(110, 4, 102, 0);
+    background-color: rgb(46, 92, 153);
+    width: 100%;
+    margin-top: 30px;
+    padding:7px 0px;
+    color:white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.account-header{
+    background-color: rgb(110, 4, 102);
+    min-height: 200px;
+}
+.account-header .profile-image{
+    width: 200px;
+    margin: auto auto;
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+}
+.account-header .profile-image img{
+    width:50%;
+    border-radius: 10px;
+}
+.account-nav{
+    background-image: linear-gradient(to left,rgb(46, 92, 153) ,rgb(110, 4, 102));
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.account-nav a{
+    text-decoration: none;
+    color:white;
+}
+.account-nav a:hover{
+    color: rgba(255, 255, 255,0.5);
+}
+.account-post{
+    width:100%;
+    margin: 20px auto;
+    background-image: linear-gradient(to right,rgb(46, 92, 153) ,rgb(110, 4, 102));
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+}
+.account-post .pay .label, .account-post .bid .label{
+    color: rgb(230, 218, 62);
+}
+.account-post .bid-btn button{
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+}
+
+/* mini loader */
+.lds-dual-ring {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #161616;
+    border-color: rgb(110, 4, 102) transparent rgb(110, 4, 102) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .file-input-wrapper{
+    overflow: hidden;
+    margin: 10px auto;
+    position: relative;
+    width: 200px;
+	height: 50px;
+}
+.file_input{
+    opacity: 0;
+    cursor: pointer;
+    height: 50px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.file-input-wrapper input[type=button]{
+    background-color: rgb(161, 46, 46);
+    color: white;
+}
+
+.bidders{
+    margin-top: 40px;
+    border: 1px solid gray;
+    border-top: unset;
+    border-bottom: unset;
+}
+.bidders-head{
+    text-align: center;
+    padding: 5px 0px;
+    background-color: rgb(46, 92, 153);
+    color: white;
+    margin-bottom: 40px;
+}
+.bidders .box{
+    padding: 30px;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+}
+.bidders .box img{
+    width: 100%;
+    margin: auto 2px;
+    border-radius:5px;
+}
+
+.bidders .box .title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.bidders .box .detail{
+    padding:0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 10px;
+}
+.bidders .box label{
+    margin-right: 5px;
+    font-weight: bold;
+}
+.update-form{
+    background-color: white;
+    margin: 40px auto;
+    padding: 20px 10px;
+}
+.update-form .form-control{
+    box-shadow:none;
+    border-radius: unset;
+    font-size: 0.9em;
+    color: rgb(110, 4, 102);
+}
+.update-form label{
+    color: gray;
+    font-size: 0.7em;
+}
+.update-form button{
+    background-color: rgb(46, 92, 153);
+    border: 1px solid rgb(46, 92, 153);
+    color:white;
+    width: 100%;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .main-search{
+        display: none; 
+    }
+    .s-header{
+        margin-bottom: 20px;
+    }
+    .account-post .bid-btn button{
+        position: relative;
+        top:0;
+        right:0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .explore-cat{
+        position: relative;
+        top:0;
+        right:0;
+        margin-bottom: 20px;
+    }
+}
